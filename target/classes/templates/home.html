@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNICSUL</title>
+</head>
+<body>
+
+    <h1><span th:text="${appRecado}"></span></h1>
+
+    <h2>Home</h2><br>
+    <b>Link do github: </b><a href="#">LinkDoRepositorio</a>
+    <h3>Integrantes</h3>
+    <ul>
+        <li>Nome: <b>Pedro Metta de Souza</b> || RA: <b>31703615</b></li>
+        <li>Nome: <b>Marcus Vinicius Souza Oliveira</b> || RA: <b>29883679</b></li>
+    </ul><br>
+    <h2>Projeto</h2>
+    <p>Neste projeto utilizamos de recursos do spring para criação de 3 rotas + página home no endereço " localhost:3500 "</p><br>
+    <h3>Utilização das rotas</h3>
+    <h4>Rota de Saudação</h4>
+    <p>Para utilização da rota de saudação basta acessar do localhost e adicionar a rota "/ola" e passar um parametro pela barra de endereço com o seu nome.</p>
+    <p><b>Exemplo:</b> localhost:3500/ola/(seu_nome)</p>
+    <p>Segue imagem da página com resposta da rota:</p>
+    <img src="img/saudacao.png" width="500px"><br>
+    <h4>Rota de Média</h4>
+    <p>Para utilização da rota de calcular média entre 2 números basta acessar localhost e adicionar a rota "/media" e passar na url 2 notas.</p>
+    <p><b>Exemplo:</b> localhost:3500/media/(nota1)/(nota2)</p>
+    <p>Segue imagem da página com resposta da rota:</p>
+    <img src="img/media.png" width="500px"><br>
+    <h4>Rota de Raíz</h4>
+    <p>Para utilização da rota de calcular a raiz de um número, acesse localhost e adicione a rota "/raiz" e ao lado o número desejado.</p>
+    <p><b>Exemplo:</b> localhost:3500/raiz/(numero)</p>
+    <p>Segue imagem da página com resposta da rota:</p>
+    <img src="img/raiz.png" width="500px">
+
+<!-- Inserir a mensagem da configuração no HTML -->
+</body>
+</html>
